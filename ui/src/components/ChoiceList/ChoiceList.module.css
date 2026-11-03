@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  flex-shrink: 0;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+  padding-bottom: 14px;
+  margin-bottom: -14px;
+}
+
+.item {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  animation: choiceIn 440ms var(--ease-out) both;
+  animation-delay: calc(70ms + (var(--i) * 55ms));
+}
+
+@keyframes choiceIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

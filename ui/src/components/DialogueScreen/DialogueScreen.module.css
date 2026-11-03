@@ -1,0 +1,65 @@
+.screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  user-select: none;
+}
+
+.browser {
+  background: linear-gradient(180deg, var(--screen-top) 0%, var(--screen-bottom) 100%);
+}
+
+.shellIn {
+  animation: screenIn 460ms var(--ease-out) both;
+}
+
+.shellOut {
+  animation: screenOut 280ms var(--ease-in) both;
+  pointer-events: none;
+}
+
+@keyframes screenIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes screenOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  width: 698px;
+  max-height: 920px;
+  min-height: 0;
+  transform-origin: center center;
+}
+
+.conversation {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}

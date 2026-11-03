@@ -1,0 +1,32 @@
+.rest,
+.active {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    width 480ms var(--ease-out),
+    height 480ms var(--ease-out),
+    background-color 480ms ease,
+    color 480ms ease,
+    font-size 480ms ease;
+}
+
+.rest {
+  width: 36px;
+  height: 36px;
+  background: var(--npc-avatar-bg);
+  color: var(--npc-avatar-text);
+  font-size: 13px;
+}
+
+.active {
+  width: 44px;
+  height: 44px;
+  background: var(--active-avatar);
+  color: var(--active-avatar-text);
+  font-size: 15px;
+}
