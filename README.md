@@ -1,4 +1,4 @@
-# zd-pedinteraction
+# zd-pedinteraction (Beta)
 
 Client-side dialogue for FiveM. Spawn a local ped, target it with [ox_target](https://github.com/overextended/ox_target), and open a conversation UI. Your resource decides what each choice does.
 
